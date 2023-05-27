@@ -1,0 +1,31 @@
+// Write your JS code here
+import Header from '../Header'
+
+import './index.css'
+const Cart = () => (
+  <>
+    <Header />
+    <div className="Cart-container">
+      <img
+        src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-img.png"
+        alt="cart"
+        className="cart-img"
+      />
+    </div>
+  </>
+)
+export default Cart
+
+
+
+/* Write your CSS code here */
+.Cart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.Cart-img {
+  width: 150px;
+}
