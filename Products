@@ -1,13 +1,18 @@
-import {Redirect, Route} from 'react-router-dom'
+// Write your JS code here
+import Header from '../Header'
 
-import Cookies from 'js-cookie'
+import './index.css'
 
-const ProtecteRoute = props => {
-  const jwtToken = Cookies.get('jwt-token')
-  if (jwtToken === undefined) {
-    return <Redirect to="/login" />
-  }
-  return <Route {...props} />
-}
-
-export default ProtecteRoute
+const Products = () => (
+  <>
+    <Header />
+    <div className="products-container">
+      <img
+        src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-img.png"
+        alt="products"
+        className="products-img"
+      />
+    </div>
+  </>
+)
+export default Products
